@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --white-color: #fff;
+  --primary-color: #3fc060;
+  --secondary-color: #162328;
+}
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+textarea {
+  resize: none;
+}
+textarea:focus,
+input:focus {
+  box-shadow: none !important;
+}
+.foodbox {
+  padding: 10px 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.foodbox div {
+  flex-grow: 1;
+  width: 100%;
+}
+.foodbox img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.foodbox h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.buybtn {
+  color: #000;
+  background-color: var(--primary-color);
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
